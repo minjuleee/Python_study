@@ -53,3 +53,18 @@ print(a > 5 and b > 300)  # F
 print(b >= 100 and not(a < 200))  # F
 
 
+# 비트 연산자  : 정수를 2진수로 바꾸어 비트단위로 연산하는 연산자
+a = 5
+b = 3
+
+print("비트 연산")
+print(a & b)    # 비트 and
+print(a | b)    # 비트 or
+print(a ^ b)    # 비트 xor
+print(~a)       # 비트 not
+
+print("쉬프트 연산")
+print(a >> 2)   # a를 2 진수로 바꾸어 오른쪽으로 2번 이동
+print(a << 3)   # a를 2 진수로 바꾸어 왼쪽으로 3번 이동
+
+
