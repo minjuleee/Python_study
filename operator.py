@@ -30,4 +30,20 @@ x /= 7  # x = x / 7
 print(x)
 
 
+# 3. 관계연산자 : (비교 연산자) - 결과값이 참 (True) 또는 거짓 (False)로 나오는 연산자. 조건문이나 반복문에서 사용된다.
+
+a, b = 100, 200
+print(a == b, a != b, a > b, a <= b ) # F, T, F, T
+print(a > 5)  # T
+
+str1 = "hello"
+str2 = "Hello"
+
+print(str1 != str2) # T
+
+str3 = "홍길동"
+str4 = "홍 길동"
+
+print(str3 != str4) # T
+
 
