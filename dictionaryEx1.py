@@ -31,3 +31,6 @@ print(student1.keys())  # student1의 모든 key 출력
 print(student1.values())  # student1의 모든 value 출력
 
 print(student1.items()) # student1의 모든 [(key, value), (key, value), ..]
+
+print('모바일' in student1)
+print('weight' in student1)
