@@ -97,3 +97,9 @@ bb = [[1, 2, 3, 4],
       [5, 6],
       [7, 8, 9]]
 print(bb)
+
+foods = ['짜장', '떡볶이', '라면', '피자', '치킨']
+sides = ['오뎅', '단무지', '김치']
+
+for food, side in zip(foods, sides) :
+  print(f"{food}는 {side}가 있어야 제맛!")
