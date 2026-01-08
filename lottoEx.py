@@ -4,9 +4,19 @@
 # 그 함수를 이용하는 방식으로 프로그램을 작성하세요.
 
 import random
-
+# for i in range(2, 101, 2):
 def isDuplicate(num):
-  return num in lotto
+  i = 0
+  while i < len(lotto) :
+    if lotto[i] == num:
+      return True
+    i += 1
+  return False
+  
+  # for i in range(len(lotto)):
+  #   if num == lotto[i]:
+  #     return True
+  # return False
 
 lotto = []  # 로또 번호 저장될 리스트
 
