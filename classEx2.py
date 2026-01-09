@@ -3,6 +3,8 @@
 # Snack은 displayInfo() 메서드를 가지고 있고, displayInfo 메서드를 호출하면
 # 상품명, 중량, 가격이 출력된다.
 
+import json
+
 class Snack:
   productName = ''
   weight = 0.0
@@ -28,3 +30,10 @@ class Snack:
       "price" : self.price,
       "nutrition" : self.nutrition
     }
+  
+  def to_json(self, pretty=False) :
+    return json.dumps(
+      self.to_dict(), 
+      ensure_ascii=True,
+      indent=2 if pretty else None
+    ) 
