@@ -21,3 +21,10 @@ class Snack:
   def displayInfo(self) :
     print(f"상품명 : {self.productName}, 중량 : {self.weight}, 가격 : {self.price}, 과자개수 : {Snack.cnt}, 영양성분 : {self.nutrition}")
 
+  def to_dict(self) :
+    return {
+      "productName" : self.productName,
+      "weight" : self.weight,
+      "price" : self.price,
+      "nutrition" : self.nutrition
+    }
